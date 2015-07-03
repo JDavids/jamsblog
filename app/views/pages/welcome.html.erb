@@ -1,8 +1,5 @@
-<h1>Welcome</h1>
-<p>
-	the is the landing page for Jamsblog, a blog about everything, made using Ruby in Rails.
-</p>
+<% @posts.each do |post| %>
+	<%= render 'posts/post', post: post %>
 
-<p>
-	This page is just a placeholder. later on I'll replace it later with blog posts.
-</p>
+	<br></br><br></br>
+<% end %>
